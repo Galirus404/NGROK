@@ -12,8 +12,6 @@ b="\033[1;34m"
 bl="\033[1;36m"
 p="\033[1;37m"
 #code
-while [ "$else" = "ulang" ]
-do
 clear
 echo $q $k"INSTALLING"
 echo $q $h
@@ -82,4 +80,3 @@ bash install.sh
         else
 echo $q $k "INPUT SALAH ULANG I"
 fi
-done
