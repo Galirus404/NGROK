@@ -14,9 +14,10 @@ p="\033[1;37m"
 #code
 clear
 echo $q $k"INSTALLING"
-echo $q $h
-apt install bash
 sleep 3
+echo $q $h
+apt install bash -y
+sleep 2 
 clear
 figlet "ngrok" | lolcat
 echo $q $b "               by.$m GALIRUS-404"
