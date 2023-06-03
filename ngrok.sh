@@ -69,10 +69,11 @@ figlet "ngrok" | lolcat
 echo $q $b "                by.$m GALIRUS-404"
 echo
 echo $q $bl
-read -p "MASUKKAN PORT > " isii
+read -p "Pilih Mana http/tcp > " isii
+read -p "Masukkan PORT > " isiii
 sleep 1
 cd
- ./ngrok http $isii
+ ./ngrok $isii $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
 cd
