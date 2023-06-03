@@ -52,15 +52,13 @@ cd
  ./ngrok authtoken $isi
 sleep 1
 echo $q $bl
-read -p "MASUKKAN PORT > " isii
+read -p "MASUKKAN http/tcp > " isii
+read -p "MASUKKAN PORT > " isiii
 sleep 1
 cd
- ./ngrok http $isii
+ ./ngrok $isii $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
-cd
-cd TOOLSV3
-bash install.sh
 
         elif [ "$ini" = "n" ]
 then
@@ -76,9 +74,6 @@ cd
  ./ngrok $isii $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
-cd
-cd TOOLSV3
-bash install.sh
         else
 echo $q $k "INPUT SALAH ULANG I"
 fi
