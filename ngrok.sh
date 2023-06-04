@@ -38,6 +38,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
 cd
 unzip ngrok-stable-linux-arm.zip
 chmod 777 ngrok
+xdg-open "www.ngrok.com"
 echo $q $bl
 read -p  "ENTER untuk melanjutkan" ini
 clear
@@ -52,11 +53,10 @@ cd
  ./ngrok authtoken $isi
 sleep 1
 echo $q $bl
-read -p "MASUKKAN http/tcp > " isii
 read -p "MASUKKAN PORT > " isiii
 sleep 1
 cd
- ./ngrok $isii $isiii
+ ./ngrok http $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
 
@@ -67,11 +67,10 @@ figlet "ngrok" | lolcat
 echo $q $b "                by.$m GALIRUS-404"
 echo
 echo $q $bl
-read -p "Pilih Mana http/tcp > " isii
 read -p "Masukkan PORT > " isiii
 sleep 1
 cd
- ./ngrok $isii $isiii
+ ./ngrok http $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
         else
