@@ -53,10 +53,11 @@ cd
  ./ngrok authtoken $isi
 sleep 1
 echo $q $bl
+read -p "http/tcp > " isii
 read -p "MASUKKAN PORT > " isiii
 sleep 1
 cd
- ./ngrok http $isiii
+ ./ngrok $isii $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
 
@@ -67,10 +68,12 @@ figlet "ngrok" | lolcat
 echo $q $b "                by.$m GALIRUS-404"
 echo
 echo $q $bl
+
+read -p "http/tcp > " isii
 read -p "Masukkan PORT > " isiii
 sleep 1
 cd
- ./ngrok http $isiii
+ ./ngrok $isii $isiii
 echo $q $bl
 read -p "ENTER UNTUK KEMBALI KE TOOLSV3" enter
         else
