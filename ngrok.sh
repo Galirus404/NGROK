@@ -38,7 +38,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
 cd
 unzip ngrok-stable-linux-arm.zip
 chmod 777 ngrok
-xdg-open "www.ngrok.com"
+xdg-open "https://ngrok.com"
 echo $q $bl
 read -p  "ENTER untuk melanjutkan" ini
 clear
